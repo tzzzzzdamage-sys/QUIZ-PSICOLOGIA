@@ -1,0 +1,317 @@
+<!-- 06 · QUIZZES INTERACTIVOS — Psicología Aplicada a la Conducción -->
+<div style="font-family:'Segoe UI',Arial,sans-serif;max-width:960px;margin:0 auto;padding-bottom:40px;">
+
+  <!-- HEADER -->
+  <div style="background:linear-gradient(135deg,#4c1d95,#312e81,#1e1b4b);padding:44px 40px;border-radius:16px;margin-bottom:28px;display:flex;gap:28px;align-items:center;">
+    <div style="flex:1;">
+      <p style="font-size:11px;letter-spacing:3px;text-transform:uppercase;color:#c4b5fd;font-weight:700;margin:0 0 10px;">⚡ Autoevaluación</p>
+      <h1 style="font-size:44px;font-weight:900;color:#fff;margin:0 0 10px;">Quizzes <span style="color:#c4b5fd;">Interactivos</span></h1>
+      <p style="color:rgba(255,255,255,.6);font-size:14px;line-height:1.7;margin:0;">Haz clic en <strong style="color:#c4b5fd;">⚡ Iniciar</strong> para cargar las preguntas de cada unidad. ¡Retroalimentación instantánea!</p>
+    </div>
+    <div style="background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.2);border-radius:14px;padding:16px 22px;text-align:center;flex-shrink:0;">
+      <span style="display:block;font-size:44px;font-weight:900;color:#c4b5fd;line-height:1;">6</span>
+      <span style="font-size:11px;color:rgba(255,255,255,.5);font-weight:700;text-transform:uppercase;letter-spacing:1px;">Quizzes</span>
+    </div>
+  </div>
+
+  <!-- CARDS -->
+  <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-bottom:32px;">
+    <div style="background:#fff;border-radius:14px;border:1px solid #e2e8f0;overflow:hidden;box-shadow:0 2px 10px rgba(0,0,0,.06);">
+      <div style="padding:18px 16px;"><div style="font-size:34px;margin-bottom:8px;">🧠</div><h3 style="font-size:14px;font-weight:800;color:#1e1b4b;margin:0 0 5px;">Quiz 1 · Psicología del Conductor</h3><p style="font-size:12px;color:#6b7280;margin:0;line-height:1.5;">Factor humano, perfil psicológico y autoestima.</p></div>
+      <div style="padding:10px 16px;border-top:1px solid #e2e8f0;background:#f5f3ff;display:flex;align-items:center;justify-content:space-between;"><span style="padding:3px 10px;border-radius:100px;font-size:11px;font-weight:700;background:#ede9fe;color:#6d28d9;">5 preguntas</span><button onclick="loadQuiz(1)" style="padding:7px 16px;border-radius:100px;font-size:12px;font-weight:700;border:none;background:#6366f1;color:#fff;cursor:pointer;">⚡ Iniciar</button></div>
+    </div>
+    <div style="background:#fff;border-radius:14px;border:1px solid #e2e8f0;overflow:hidden;box-shadow:0 2px 10px rgba(0,0,0,.06);">
+      <div style="padding:18px 16px;"><div style="font-size:34px;margin-bottom:8px;">👁️</div><h3 style="font-size:14px;font-weight:800;color:#1e1b4b;margin:0 0 5px;">Quiz 2 · Procesos Psicológicos</h3><p style="font-size:12px;color:#6b7280;margin:0;line-height:1.5;">Percepción, atención, distancias y velocidad.</p></div>
+      <div style="padding:10px 16px;border-top:1px solid #e2e8f0;background:#eff6ff;display:flex;align-items:center;justify-content:space-between;"><span style="padding:3px 10px;border-radius:100px;font-size:11px;font-weight:700;background:#dbeafe;color:#1d4ed8;">5 preguntas</span><button onclick="loadQuiz(2)" style="padding:7px 16px;border-radius:100px;font-size:12px;font-weight:700;border:none;background:#3b82f6;color:#fff;cursor:pointer;">⚡ Iniciar</button></div>
+    </div>
+    <div style="background:#fff;border-radius:14px;border:1px solid #e2e8f0;overflow:hidden;box-shadow:0 2px 10px rgba(0,0,0,.06);">
+      <div style="padding:18px 16px;"><div style="font-size:34px;margin-bottom:8px;">🎭</div><h3 style="font-size:14px;font-weight:800;color:#1e1b4b;margin:0 0 5px;">Quiz 3 · Personalidad del Conductor</h3><p style="font-size:12px;color:#6b7280;margin:0;line-height:1.5;">Tipos de personalidad, temperamento y conductas.</p></div>
+      <div style="padding:10px 16px;border-top:1px solid #e2e8f0;background:#fffbeb;display:flex;align-items:center;justify-content:space-between;"><span style="padding:3px 10px;border-radius:100px;font-size:11px;font-weight:700;background:#fef3c7;color:#92400e;">5 preguntas</span><button onclick="loadQuiz(3)" style="padding:7px 16px;border-radius:100px;font-size:12px;font-weight:700;border:none;background:#f59e0b;color:#fff;cursor:pointer;">⚡ Iniciar</button></div>
+    </div>
+    <div style="background:#fff;border-radius:14px;border:1px solid #e2e8f0;overflow:hidden;box-shadow:0 2px 10px rgba(0,0,0,.06);">
+      <div style="padding:18px 16px;"><div style="font-size:34px;margin-bottom:8px;">❤️</div><h3 style="font-size:14px;font-weight:800;color:#1e1b4b;margin:0 0 5px;">Quiz 4 · Emociones y Autocontrol</h3><p style="font-size:12px;color:#6b7280;margin:0;line-height:1.5;">Estrés, ira al volante y técnicas de autocontrol.</p></div>
+      <div style="padding:10px 16px;border-top:1px solid #e2e8f0;background:#fdf2f8;display:flex;align-items:center;justify-content:space-between;"><span style="padding:3px 10px;border-radius:100px;font-size:11px;font-weight:700;background:#fce7f3;color:#9d174d;">5 preguntas</span><button onclick="loadQuiz(4)" style="padding:7px 16px;border-radius:100px;font-size:12px;font-weight:700;border:none;background:#ec4899;color:#fff;cursor:pointer;">⚡ Iniciar</button></div>
+    </div>
+    <div style="background:#fff;border-radius:14px;border:1px solid #e2e8f0;overflow:hidden;box-shadow:0 2px 10px rgba(0,0,0,.06);">
+      <div style="padding:18px 16px;"><div style="font-size:34px;margin-bottom:8px;">🤝</div><h3 style="font-size:14px;font-weight:800;color:#1e1b4b;margin:0 0 5px;">Quiz 5 · Habilidades Sociales Viales</h3><p style="font-size:12px;color:#6b7280;margin:0;line-height:1.5;">Asertividad, empatía y convivencia vial.</p></div>
+      <div style="padding:10px 16px;border-top:1px solid #e2e8f0;background:#ecfdf5;display:flex;align-items:center;justify-content:space-between;"><span style="padding:3px 10px;border-radius:100px;font-size:11px;font-weight:700;background:#d1fae5;color:#065f46;">5 preguntas</span><button onclick="loadQuiz(5)" style="padding:7px 16px;border-radius:100px;font-size:12px;font-weight:700;border:none;background:#10b981;color:#fff;cursor:pointer;">⚡ Iniciar</button></div>
+    </div>
+    <div style="background:#fff;border-radius:14px;border:1px solid #e2e8f0;overflow:hidden;box-shadow:0 2px 10px rgba(0,0,0,.06);">
+      <div style="padding:18px 16px;"><div style="font-size:34px;margin-bottom:8px;">⚠️</div><h3 style="font-size:14px;font-weight:800;color:#1e1b4b;margin:0 0 5px;">Quiz 6 · Factores de Riesgo</h3><p style="font-size:12px;color:#6b7280;margin:0;line-height:1.5;">Fatiga, alcohol, distracciones y velocidad.</p></div>
+      <div style="padding:10px 16px;border-top:1px solid #e2e8f0;background:#fef2f2;display:flex;align-items:center;justify-content:space-between;"><span style="padding:3px 10px;border-radius:100px;font-size:11px;font-weight:700;background:#fee2e2;color:#991b1b;">5 preguntas</span><button onclick="loadQuiz(6)" style="padding:7px 16px;border-radius:100px;font-size:12px;font-weight:700;border:none;background:#ef4444;color:#fff;cursor:pointer;">⚡ Iniciar</button></div>
+    </div>
+  </div>
+
+  <!-- ZONA DE PREGUNTAS -->
+  <div id="quizZone" style="display:none;">
+    <div id="quizTitle" style="background:linear-gradient(135deg,#1e1b4b,#312e81);border-radius:14px;padding:16px 24px;margin-bottom:18px;display:flex;align-items:center;gap:14px;">
+      <span id="quizEmoji" style="font-size:30px;"></span>
+      <div><p id="quizLabel" style="font-size:10px;letter-spacing:3px;text-transform:uppercase;color:rgba(255,255,255,.4);margin:0 0 4px;font-weight:700;"></p><h2 id="quizName" style="font-size:18px;font-weight:800;color:#fff;margin:0;"></h2></div>
+    </div>
+    <div style="display:flex;align-items:center;gap:12px;margin-bottom:18px;">
+      <div style="flex:1;height:8px;background:#e2e8f0;border-radius:100px;overflow:hidden;"><div id="qprog" style="height:100%;width:0%;border-radius:100px;transition:width .4s;"></div></div>
+      <span id="qlab" style="font-size:12px;font-weight:700;color:#6b7280;white-space:nowrap;min-width:40px;text-align:right;"></span>
+    </div>
+    <div id="questionBox" style="background:linear-gradient(135deg,#1e1b4b,#312e81);border-radius:12px;padding:22px 24px;margin-bottom:16px;">
+      <p style="font-size:10px;letter-spacing:2px;text-transform:uppercase;color:rgba(255,255,255,.4);margin:0 0 10px;font-weight:700;">Pregunta</p>
+      <p id="qtxt" style="color:#fff;font-size:15px;font-weight:600;line-height:1.65;margin:0;"></p>
+    </div>
+    <div id="qopts" style="display:flex;flex-direction:column;gap:10px;margin-bottom:14px;"></div>
+    <div id="qfb" style="display:none;padding:13px 16px;border-radius:10px;font-size:13px;font-weight:600;line-height:1.65;margin-bottom:14px;"></div>
+    <div style="display:flex;gap:10px;flex-wrap:wrap;">
+      <button id="btnReset" onclick="resetQ()" style="padding:9px 20px;border-radius:100px;font-size:12px;font-weight:700;border:2px solid #e2e8f0;background:transparent;color:#6b7280;cursor:pointer;">🔄 Reintentar</button>
+      <button id="btnNext" onclick="nextQ()" style="padding:9px 20px;border-radius:100px;font-size:12px;font-weight:700;border:none;background:#6366f1;color:#fff;cursor:pointer;">Siguiente ➡</button>
+    </div>
+    <div id="qscore" style="display:none;margin-top:18px;text-align:center;padding:28px;border-radius:14px;border:2px solid #86efac;background:linear-gradient(135deg,#dcfce7,#d1fae5);">
+      <div id="scoreEmoji" style="font-size:52px;margin-bottom:10px;"></div>
+      <div id="scorenum" style="font-size:56px;font-weight:900;color:#16a34a;line-height:1;margin-bottom:8px;"></div>
+      <div id="scorelbl" style="font-size:16px;font-weight:800;color:#15803d;margin-bottom:4px;"></div>
+      <div id="scoresub" style="font-size:13px;color:#166534;margin-bottom:18px;"></div>
+      <button onclick="resetAll()" style="padding:10px 24px;border-radius:100px;font-size:13px;font-weight:700;border:none;background:#6366f1;color:#fff;cursor:pointer;">🔄 Intentar de nuevo</button>
+    </div>
+  </div>
+
+  <div id="quizPlaceholder" style="background:#fff;border-radius:16px;border:2px dashed #e2e8f0;padding:44px;text-align:center;">
+    <div style="font-size:52px;margin-bottom:14px;">👆</div>
+    <h3 style="font-size:18px;font-weight:800;color:#1e1b4b;margin:0 0 8px;">Selecciona un Quiz para comenzar</h3>
+    <p style="font-size:14px;color:#94a3b8;margin:0;">Haz clic en <strong style="color:#6366f1;">⚡ Iniciar</strong> en cualquiera de los quizzes de arriba.</p>
+  </div>
+
+</div>
+
+<script>
+var QUIZDATA = {
+  1: { name:"Quiz 1 · Psicología del Conductor", label:"UNIDAD I · PSICOLOGÍA DEL CONDUCTOR", emoji:"🧠", color:"#6366f1",
+    qs:[
+      { q:"¿Cuál es el porcentaje aproximado de accidentes de tránsito en que el factor humano es la causa principal?",
+        opts:["50%","70%","90%","100%"], ok:2,
+        fb_ok:"✅ ¡Correcto! El factor humano explica aproximadamente el 90% de los accidentes. Abarca errores, decisiones y comportamientos del conductor, pasajeros o peatones.",
+        fb_err:"❌ Incorrecto. El factor humano es responsable del aproximadamente 90% de los accidentes de tránsito." },
+      { q:"¿Cuál de los siguientes NO es un aspecto del factor humano en conducción?",
+        opts:["Factores fisiológicos (fatiga, sueño)","Factores psicológicos (estrés, ira)","Estado del pavimento","Factores cognitivos (atención, percepción)"], ok:2,
+        fb_ok:"✅ ¡Correcto! El estado del pavimento corresponde al factor vía, no al factor humano.",
+        fb_err:"❌ Incorrecto. El estado del pavimento es el factor VÍA, no factor humano. Los factores humanos son fisiológicos, psicológicos, cognitivos y actitudinales." },
+      { q:"El perfil psicológico del conductor profesional ideal se caracteriza principalmente por:",
+        opts:["Alta velocidad de reacción y agresividad controlada","Estabilidad emocional, responsabilidad y resistencia a la fatiga","Baja empatía y alto autocontrol de impulsos","Confianza extrema en sus habilidades al volante"], ok:1,
+        fb_ok:"✅ ¡Correcto! El perfil ideal incluye estabilidad emocional, responsabilidad, empatía y resistencia a la fatiga, priorizando la seguridad sobre la destreza técnica.",
+        fb_err:"❌ Incorrecto. El perfil psicológico ideal incluye estabilidad emocional, responsabilidad, empatía y resistencia a la fatiga." },
+      { q:"La autoestima ALTA en un conductor profesional:",
+        opts:["Lo lleva a conducir de forma temeraria por exceso de confianza","Potencia la seguridad y mejora la toma de decisiones rápidas","Genera inseguridad y conducción defensiva extrema","Reduce la capacidad de adaptación a condiciones adversas"], ok:1,
+        fb_ok:"✅ ¡Correcto! Una autoestima saludable y alta potencia la seguridad, mejora la toma de decisiones, reduce la agresividad y facilita el aprendizaje.",
+        fb_err:"❌ Incorrecto. La autoestima ALTA (saludable) mejora la seguridad, la toma de decisiones y la adaptación. Es la autoestima BAJA la que genera inseguridad." },
+      { q:"El síndrome de Burnout en conductores profesionales se caracteriza por:",
+        opts:["Mayor energía y motivación en el trabajo","Agotamiento crónico que puede llevar a conducción descuidada","Aumento de la concentración y rendimiento","Mayor empatía con otros conductores"], ok:1,
+        fb_ok:"✅ ¡Correcto! El Burnout es agotamiento crónico que genera pérdida de interés en el trabajo y puede derivar en una conducción descuidada y peligrosa.",
+        fb_err:"❌ Incorrecto. El Burnout es agotamiento crónico que lleva a la pérdida de interés y conducción descuidada, no a mayor energía ni concentración." }
+    ]
+  },
+  2: { name:"Quiz 2 · Procesos Psicológicos", label:"UNIDAD II · PROCESOS PSICOLÓGICOS BÁSICOS", emoji:"👁️", color:"#3b82f6",
+    qs:[
+      { q:"¿Qué porcentaje de la información que recibe el conductor al volante es de tipo visual?",
+        opts:["50%","70%","80%","90%"], ok:3,
+        fb_ok:"✅ ¡Correcto! El 90% de la información que recibe el conductor es visual, lo que explica la importancia crítica de las condiciones de visibilidad y la fatiga visual.",
+        fb_err:"❌ Incorrecto. El 90% de la información del conductor es visual. Por eso las condiciones de visibilidad son tan críticas para la seguridad." },
+      { q:"La percepción de la velocidad propia está especialmente relacionada con:",
+        opts:["La visión central o fóvea","La visión periférica","El sistema auditivo","La sensación táctil del volante"], ok:1,
+        fb_ok:"✅ ¡Correcto! La percepción de la velocidad propia está relacionada principalmente con la visión periférica. A mayor velocidad, mayor flujo óptico en la periferia.",
+        fb_err:"❌ Incorrecto. La percepción de la velocidad propia depende principalmente de la visión PERIFÉRICA, no de la visión central." },
+      { q:"¿Qué es la 'ceguera por inatención' en la conducción?",
+        opts:["Perder la visión temporalmente por el sol","Mirar la carretera pero el cerebro no procesa lo que ve","No poder ver objetos en movimiento","Ver borroso por fatiga ocular"], ok:1,
+        fb_ok:"✅ ¡Correcto! La ceguera por inatención ocurre cuando miramos la carretera pero nuestra mente está distraída (por ejemplo, hablando por teléfono) y no procesa lo que vemos.",
+        fb_err:"❌ Incorrecto. La ceguera por inatención es cuando miras la carretera pero tu cerebro no procesa la información visual porque está ocupado en otra tarea cognitiva." },
+      { q:"¿Qué es el 'efecto de adaptación visual a la velocidad'?",
+        opts:["Ver más rápido conforme aumenta la velocidad","Sentir que se va despacio tras reducir de alta a baja velocidad","Perder visión periférica al aumentar la velocidad","Mejorar los reflejos con el tiempo de conducción"], ok:1,
+        fb_ok:"✅ ¡Correcto! Tras conducir a 120 km/h, reducir a 70 km/h da la sensación de ir muy despacio. Este fenómeno hace que se subestime la velocidad real.",
+        fb_err:"❌ Incorrecto. El efecto de adaptación visual es que después de conducir a alta velocidad, reducir la velocidad da la falsa sensación de ir muy despacio." },
+      { q:"La 'atención sostenida' en conducción se ve más afectada en:",
+        opts:["Tráfico urbano muy congestionado","Carreteras de montaña con curvas","Autopistas largas y monótonas","Zonas escolares con baja velocidad"], ok:2,
+        fb_ok:"✅ ¡Correcto! La atención sostenida sufre más en autopistas monótonas, donde puede aparecer el 'efecto hipnosis' o desconexión mental por falta de estímulos variados.",
+        fb_err:"❌ Incorrecto. La atención sostenida se ve más afectada en vías monótonas como autopistas largas, donde aparece el 'efecto hipnosis'." }
+    ]
+  },
+  3: { name:"Quiz 3 · Personalidad del Conductor", label:"UNIDAD III · PERSONALIDAD Y CONDUCTA", emoji:"🎭", color:"#f59e0b",
+    qs:[
+      { q:"¿Qué tipo de personalidad del conductor actúa sin pensar en las consecuencias y toma decisiones arriesgadas sin analizar?",
+        opts:["Conductor agresivo","Conductor impulsivo","Conductor competitivo","Conductor distraído"], ok:1,
+        fb_ok:"✅ ¡Correcto! El conductor impulsivo actúa sin reflexionar sobre las consecuencias, tomando decisiones rápidas y arriesgadas como adelantar en curva.",
+        fb_err:"❌ Incorrecto. El conductor IMPULSIVO actúa sin pensar. El agresivo reacciona con hostilidad; el competitivo ve la vía como una carrera." },
+      { q:"El temperamento COLÉRICO se caracteriza principalmente por:",
+        opts:["Ser sereno, racional y perseverante","Ser enérgico, proactivo e independiente con tendencia a la confrontación","Ser alegre, optimista y guiarse por sentimientos","Ser sensible, creativo y perfeccionista"], ok:1,
+        fb_ok:"✅ ¡Correcto! El temperamento colérico es enérgico, proactivo, asertivo y no rehúye la confrontación. En extremo, puede generar conflictos y hostilidad en la vía.",
+        fb_err:"❌ Incorrecto. El temperamento COLÉRICO es enérgico y proactivo. El flemático es sereno y racional; el sanguíneo es alegre; el melancólico es sensible y perfeccionista." },
+      { q:"¿Qué explica el fenómeno por el que algunos conductores se comportan de forma agresiva al volante aunque sean personas tranquilas en su vida cotidiana?",
+        opts:["Doble personalidad clínica","El efecto del anonimato y las circunstancias únicas del entorno vial","La fatiga acumulada por conducir mucho tiempo","El exceso de confianza en sus habilidades"], ok:1,
+        fb_ok:"✅ ¡Correcto! No hay doble personalidad. El entorno vial tiene condiciones únicas: anonimato, riesgo, presión de tiempo, que favorecen comportamientos que no aparecen en otros ámbitos.",
+        fb_err:"❌ Incorrecto. No hay doble personalidad. El entorno vial (anonimato, riesgo, presión) genera comportamientos que no aparecen habitualmente en otros contextos." },
+      { q:"Las conductas de riesgo al volante están más relacionadas con personalidades:",
+        opts:["Responsables y empáticas","Impulsivas, agresivas o distraídas","Flemáticas y cautelosas","Pasivas y reflexivas"], ok:1,
+        fb_ok:"✅ ¡Correcto! Las conductas de riesgo (exceso de velocidad, uso del celular, conducción agresiva) están principalmente asociadas a personalidades impulsivas, agresivas o distraídas.",
+        fb_err:"❌ Incorrecto. Las conductas de riesgo se asocian a personalidades IMPULSIVAS, AGRESIVAS o DISTRAÍDAS, no a perfiles responsables o cautelosos." },
+      { q:"Según el documento, '¿el hombre conduce como vive?' Esta afirmación sugiere que:",
+        opts:["La conducción mejora el carácter de las personas","La propensión a tener accidentes en la carretera refleja rasgos generales de la persona","Los accidentes ocurren solo por factores externos","Los conductores experimentados son más seguros siempre"], ok:1,
+        fb_ok:"✅ ¡Correcto! Esta frase refleja la idea de que la propensión a los accidentes no es solo del contexto vial sino una característica general del individuo que se manifiesta en múltiples ámbitos.",
+        fb_err:"❌ Incorrecto. 'El hombre conduce como vive' sugiere que la forma de conducir refleja rasgos generales de la personalidad que se manifiestan también en otros ámbitos." }
+    ]
+  },
+  4: { name:"Quiz 4 · Emociones y Autocontrol", label:"UNIDAD IV · EMOCIONES Y CONTROL EMOCIONAL", emoji:"❤️", color:"#ec4899",
+    qs:[
+      { q:"¿Cuál es la principal diferencia entre una emoción y un sentimiento en la conducción?",
+        opts:["Las emociones son positivas; los sentimientos, negativos","Las emociones son reacciones inmediatas e inconscientes; los sentimientos son más duraderos y conscientes","Los sentimientos ocurren antes que las emociones","No hay diferencia relevante entre ambos"], ok:1,
+        fb_ok:"✅ ¡Correcto! Las emociones son reacciones psicofisiológicas espontáneas y automáticas. Los sentimientos son la interpretación consciente y duradera de esas emociones.",
+        fb_err:"❌ Incorrecto. Las emociones son reacciones inmediatas e inconscientes. Los sentimientos son la interpretación consciente y más duradera de esas emociones. Siempre va primero la emoción." },
+      { q:"En las fases del estrés, ¿cuándo es MÁS peligroso conducir?",
+        opts:["Fase de alarma (primer contacto con el estresante)","Fase de resistencia y agotamiento (estrés prolongado)","Al inicio del viaje, antes de que el estrés se active","Solo cuando el estrés es causado por el tráfico"], ok:1,
+        fb_ok:"✅ ¡Correcto! Las fases de resistencia y agotamiento son las más peligrosas: la tensión aumenta, la prudencia disminuye y en el agotamiento aparece somnolencia y errores graves de juicio.",
+        fb_err:"❌ Incorrecto. Las fases MÁS peligrosas son la resistencia (impaciencia, conducción temeraria) y el agotamiento (somnolencia, falta de concentración extrema)." },
+      { q:"La técnica de 'respiración profunda' para controlar emociones al volante pertenece al grupo de técnicas:",
+        opts:["Cognitivas","Fisiológicas","Conductuales","Sociales"], ok:1,
+        fb_ok:"✅ ¡Correcto! La respiración profunda, la relajación muscular y el mindfulness son técnicas fisiológicas que actúan directamente sobre las respuestas físicas del organismo ante el estrés.",
+        fb_err:"❌ Incorrecto. La respiración profunda es una técnica FISIOLÓGICA. Las cognitivas incluyen distracción, parada de pensamiento y ensayo mental." },
+      { q:"¿Cuál de las siguientes es una estrategia CORRECTA para manejar la agresividad de un tercero en la vía?",
+        opts:["Responder con el claxon para que sepa que lo viste","Mantener distancia, no confrontar y si persiste, llamar a la policía","Salir del vehículo a hablar con el conductor agresivo","Acelerar para alejarse rápidamente del conductor agresivo"], ok:1,
+        fb_ok:"✅ ¡Correcto! Ante un conductor agresivo: no confrontar, evitar contacto visual, mantener distancia y si persiste en la agresión, llamar a la policía. Nunca salir del vehículo.",
+        fb_err:"❌ Incorrecto. La estrategia correcta es no confrontar, mantener distancia y llamar a la policía si persiste. Responder, salir del vehículo o acelerar empeoran la situación." },
+      { q:"La 'conducción racional' se diferencia de la 'conducción emocional' principalmente en:",
+        opts:["La velocidad de reacción del conductor","El nivel de autocontrol y la base de las decisiones (lógica vs. emociones)","El tipo de vehículo utilizado","La experiencia acumulada al volante"], ok:1,
+        fb_ok:"✅ ¡Correcto! La conducción racional se basa en lógica y alto autocontrol; la emocional se basa en el estado de ánimo y tiene bajo autocontrol. Ambas coexisten; el objetivo es que la razón guíe.",
+        fb_err:"❌ Incorrecto. La diferencia clave está en el nivel de autocontrol y la base de las decisiones: lógica y análisis (racional) vs. emociones del momento (emocional)." }
+    ]
+  },
+  5: { name:"Quiz 5 · Habilidades Sociales Viales", label:"UNIDAD V · HABILIDADES SOCIALES EN LA CONDUCCIÓN", emoji:"🤝", color:"#10b981",
+    qs:[
+      { q:"La conducción asertiva se diferencia de la agresiva y la pasiva en que:",
+        opts:["Es más rápida que la pasiva pero más lenta que la agresiva","Es equilibrada, expresando las propias intenciones sin menoscabar a los demás","Prioriza llegar rápido respetando las normas","Evita cualquier maniobra que pueda molestar a otros conductores"], ok:1,
+        fb_ok:"✅ ¡Correcto! La asertividad es el punto de equilibrio: no es pasiva ni agresiva. Permite expresar intenciones de forma clara, directa y respetuosa sin perjudicar a los demás.",
+        fb_err:"❌ Incorrecto. La asertividad es una conducta EQUILIBRADA: expresa pensamientos y sentimientos de forma honesta y directa respetando a los demás. No es ni pasiva ni agresiva." },
+      { q:"Ser un conductor empático implica principalmente:",
+        opts:["Siempre ceder el paso a todos los vehículos","Anticipar los comportamientos de otros para evitar inconvenientes y actuar con cortesía","Reducir siempre la velocidad por debajo del límite","Nunca usar la bocina para no molestar"], ok:1,
+        fb_ok:"✅ ¡Correcto! La empatía vial radica en comprender y anticipar los movimientos de los demás para evitar conflictos y actuar con cortesía hacia todos los usuarios de la vía.",
+        fb_err:"❌ Incorrecto. La empatía vial es la capacidad de anticipar comportamientos de otros y actuar con cortesía. No significa siempre ceder el paso ni nunca usar la bocina." },
+      { q:"¿Cuál es el principal mecanismo psicológico para reducir conflictos viales según la psicología aplicada?",
+        opts:["Evitar todas las situaciones de tráfico denso","Autorregulación emocional y reestructuración cognitiva","Aumentar la velocidad para salir rápido de situaciones tensas","Responder con firmeza a las provocaciones"], ok:1,
+        fb_ok:"✅ ¡Correcto! La autorregulación emocional (controlar la ira y el estrés) y la reestructuración cognitiva (cambiar pensamientos negativos por racionales) son las bases para reducir conflictos.",
+        fb_err:"❌ Incorrecto. Los mecanismos clave son la autorregulación emocional y la reestructuración cognitiva (pensar 'fue un error' en lugar de 'lo hizo a propósito')." },
+      { q:"La comunicación no verbal en la vía incluye:",
+        opts:["Solo las señales sonoras del vehículo (claxon)","Señales del vehículo, gestos, postura corporal y forma de conducir","Únicamente las señales de tránsito colocadas por la autoridad","Solo el uso de las luces largas y cortas"], ok:1,
+        fb_ok:"✅ ¡Correcto! La comunicación no verbal vial abarca: señales del vehículo (intermitentes, frenos), gestos y contacto visual entre conductores, postura corporal, y la propia forma de conducir.",
+        fb_err:"❌ Incorrecto. La comunicación no verbal en la vía incluye señales del vehículo, gestos, contacto visual, postura corporal y la forma en que se conduce (velocidad, distancia, posición)." },
+      { q:"Cerca del 90% de los accidentes con víctimas son producto de:",
+        opts:["Fallas mecánicas no detectadas","Fallas humanas y errores en la percepción del riesgo","Mal estado de las vías públicas","Condiciones climáticas adversas"], ok:1,
+        fb_ok:"✅ ¡Correcto! Cerca del 90% de los accidentes con víctimas son producto de fallas humanas, especialmente de errores en la percepción del riesgo. Por eso la psicología vial es fundamental.",
+        fb_err:"❌ Incorrecto. El 90% de los accidentes son por fallas HUMANAS, principalmente errores en la percepción del riesgo. Las fallas mecánicas o del entorno son causas secundarias." }
+    ]
+  },
+  6: { name:"Quiz 6 · Factores de Riesgo", label:"UNIDAD VI · FACTORES DE RIESGO EN LA CONDUCCIÓN", emoji:"⚠️", color:"#ef4444",
+    qs:[
+      { q:"¿Qué porcentaje de los accidentes de tránsito está relacionado con el factor sueño, directa o indirectamente?",
+        opts:["5 a 10%","15 a 30%","40 a 50%","Más del 60%"], ok:1,
+        fb_ok:"✅ ¡Correcto! Datos internacionales revelan que entre el 15 y 30% de los accidentes tiene al factor sueño asociado directa o indirectamente, muchos con consecuencias fatales.",
+        fb_err:"❌ Incorrecto. Según estudios internacionales, entre el 15 y 30% de los accidentes tiene al factor sueño asociado. Es uno de los factores de riesgo más subestimados." },
+      { q:"Un conductor que ha consumido 0.5 g/l de alcohol en sangre experimentará principalmente:",
+        opts:["Solo relajación leve sin efectos en la conducción","Inicio de perturbación motriz, pérdida de concentración y exceso de confianza","Solo somnolencia leve que puede controlarse","Ningún efecto perceptible en conductores experimentados"], ok:1,
+        fb_ok:"✅ ¡Correcto! Con 0.5 g/l aparecen: reacción lenta, perturbación motriz, pérdida de concentración, trastornos visuales y —peligrosamente— exceso de confianza en uno mismo.",
+        fb_err:"❌ Incorrecto. Con 0.5 g/l ya hay reacción general lenta, perturbación motriz, pérdida de concentración, alteraciones visuales e inicio de impulsividad y agresividad." },
+      { q:"¿Qué es el 'efecto túnel' producido por el exceso de velocidad?",
+        opts:["Ver doble por la velocidad","Reducción del campo de visión: a 130 km/h se reduce a solo 30°","Confundir día y noche al conducir rápido","Distorsión del color de las señales de tránsito"], ok:1,
+        fb_ok:"✅ ¡Correcto! A 65 km/h el campo visual se reduce más de la mitad; a 130 km/h se reduce a solo 30°. Por eso a alta velocidad no se ven los objetos que salen lateralmente.",
+        fb_err:"❌ Incorrecto. El efecto túnel es la reducción severa del campo visual a altas velocidades. A 130 km/h el campo de visión se reduce a solo 30° (normal: 180°)." },
+      { q:"¿Cuál de las siguientes distracciones es la MÁS peligrosa según los estudios mencionados?",
+        opts:["Escuchar música con auriculares","Enviar mensajes de texto por el teléfono (multiplica x23 el riesgo)","Comer o beber durante la conducción","Conversar con pasajeros"], ok:1,
+        fb_ok:"✅ ¡Correcto! El envío de mensajes de texto multiplica por 23 las posibilidades de accidente porque involucra tres tipos de distracción simultánea: visual, cognitiva y manual.",
+        fb_err:"❌ Incorrecto. Enviar mensajes de texto multiplica por 23 el riesgo porque genera distracción TRIPLE: visual (ojos en pantalla), cognitiva (mente elaborando mensaje) y manual (manos teclando)." },
+      { q:"Una colisión a 120 km/h equivale en términos de energía a:",
+        opts:["Caer desde el tercer piso","Caer desde el séptimo piso","Caer desde el piso 14","Caer desde el piso 36"], ok:2,
+        fb_ok:"✅ ¡Correcto! A 120 km/h equivale a caer desde el piso 14. A 50 km/h sería desde el piso 3, y a 180 km/h desde el piso 36. La velocidad multiplica exponencialmente la energía del impacto.",
+        fb_err:"❌ Incorrecto. 50 km/h = 3er piso, 120 km/h = piso 14, 180 km/h = piso 36. Esto ilustra cómo la velocidad multiplica exponencialmente la energía cinética del impacto." }
+    ]
+  }
+};
+
+var cur=0, score=0, answered=false, activeQuiz=null;
+var letters=['A','B','C','D'];
+var colors={1:'#6366f1',2:'#3b82f6',3:'#f59e0b',4:'#ec4899',5:'#10b981',6:'#ef4444'};
+
+function loadQuiz(num) {
+  activeQuiz=QUIZDATA[num]; cur=0; score=0; answered=false;
+  document.getElementById('quizPlaceholder').style.display='none';
+  document.getElementById('quizZone').style.display='block';
+  document.getElementById('qscore').style.display='none';
+  document.getElementById('qopts').style.display='flex';
+  document.getElementById('questionBox').style.display='block';
+  document.getElementById('qfb').style.display='none';
+  document.getElementById('btnReset').style.display='inline-flex';
+  document.getElementById('btnNext').style.display='inline-flex';
+  document.getElementById('quizEmoji').textContent=activeQuiz.emoji;
+  document.getElementById('quizLabel').textContent=activeQuiz.label;
+  document.getElementById('quizName').textContent=activeQuiz.name;
+  document.getElementById('qprog').style.background='linear-gradient(90deg,'+colors[num]+',#a5b4fc)';
+  document.getElementById('btnNext').style.background=colors[num];
+  document.getElementById('quizZone').scrollIntoView({behavior:'smooth',block:'start'});
+  render();
+}
+
+function render() {
+  var d=activeQuiz.qs[cur];
+  document.getElementById('qtxt').textContent=d.q;
+  document.getElementById('qprog').style.width=((cur+1)/activeQuiz.qs.length*100)+'%';
+  document.getElementById('qlab').textContent=(cur+1)+' / '+activeQuiz.qs.length;
+  var html='';
+  for(var i=0;i<d.opts.length;i++){
+    html+='<div id="opt'+i+'" onclick="checkAns('+i+','+(i===d.ok?'true':'false')+')" style="padding:12px 14px;border-radius:10px;border:2px solid #e2e8f0;background:#fff;cursor:pointer;font-size:13px;font-weight:600;color:#0f172a;display:flex;align-items:center;gap:12px;">';
+    html+='<span style="width:26px;height:26px;border-radius:8px;background:#e2e8f0;display:inline-flex;align-items:center;justify-content:center;font-size:11px;font-weight:800;flex-shrink:0;">'+letters[i]+'</span>';
+    html+=d.opts[i]+'</div>';
+  }
+  document.getElementById('qopts').innerHTML=html;
+  document.getElementById('qfb').style.display='none';
+  answered=false;
+}
+
+function checkAns(i,correct) {
+  if(answered)return;
+  answered=true;
+  var d=activeQuiz.qs[cur];
+  for(var j=0;j<d.opts.length;j++){var el=document.getElementById('opt'+j);if(el)el.style.pointerEvents='none';}
+  var chosen=document.getElementById('opt'+i);
+  var fb=document.getElementById('qfb');
+  if(correct){
+    score++;
+    chosen.style.borderColor='#16a34a';chosen.style.background='#dcfce7';chosen.style.color='#15803d';
+    var ltr=chosen.querySelector('span');if(ltr){ltr.style.background='#16a34a';ltr.style.color='#fff';}
+    fb.style.background='#dcfce7';fb.style.border='1px solid #86efac';fb.style.color='#15803d';
+    fb.textContent=d.fb_ok;
+  } else {
+    chosen.style.borderColor='#dc2626';chosen.style.background='#fef2f2';chosen.style.color='#dc2626';
+    var lw=chosen.querySelector('span');if(lw){lw.style.background='#dc2626';lw.style.color='#fff';}
+    var co=document.getElementById('opt'+d.ok);
+    if(co){co.style.borderColor='#16a34a';co.style.background='#dcfce7';co.style.color='#15803d';var lk=co.querySelector('span');if(lk){lk.style.background='#16a34a';lk.style.color='#fff';}}
+    fb.style.background='#fef2f2';fb.style.border='1px solid #fca5a5';fb.style.color='#dc2626';
+    fb.textContent=d.fb_err;
+  }
+  fb.style.display='block';
+}
+
+function nextQ(){cur++;if(cur>=activeQuiz.qs.length){showScore();}else{render();}}
+function showScore(){
+  document.getElementById('qopts').style.display='none';
+  document.getElementById('questionBox').style.display='none';
+  document.getElementById('qfb').style.display='none';
+  document.getElementById('btnReset').style.display='none';
+  document.getElementById('btnNext').style.display='none';
+  var pct=Math.round((score/activeQuiz.qs.length)*100);
+  document.getElementById('scoreEmoji').textContent=pct>=80?'🏆':pct>=60?'👍':'📖';
+  document.getElementById('scorenum').textContent=score+'/'+activeQuiz.qs.length;
+  document.getElementById('scorelbl').textContent=pct>=80?'¡Excelente resultado!':pct>=60?'¡Buen intento!':'Sigue practicando';
+  document.getElementById('scoresub').textContent='Respondiste '+score+' de '+activeQuiz.qs.length+' preguntas correctamente ('+pct+'%).';
+  document.getElementById('qscore').style.display='block';
+}
+function resetQ(){render();}
+function resetAll(){
+  cur=0;score=0;
+  document.getElementById('qscore').style.display='none';
+  document.getElementById('qopts').style.display='flex';
+  document.getElementById('questionBox').style.display='block';
+  document.getElementById('btnReset').style.display='inline-flex';
+  document.getElementById('btnNext').style.display='inline-flex';
+  render();
+}
+</script>
